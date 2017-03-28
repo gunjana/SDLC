@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SALES</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript">
+		fuction check()
+		{
+			var paswrd1= document.GetElementById('pass1');
+			var paswrd2= document.GetElementById('pass2');
+			if(paswrd1.value!=paswrd2.vlaue)
+			{
+				alert("password doesn't match!");
+				
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				
+				<ul id="navigation">
+					<li >
+						<a href="index.html">Home</a>
+					</li>
+					<li class="selected">
+						<a href="blog1.html">Account</a>	
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<div class="sidebar">
+					<div id="l">
+						<form method="post" action="signup.php">
+						<ul>
+							<li>
+							<h2><center>SIGN UP</center></h2><br>
+							<font color="black">
+							<label>FULL NAME:
+								<input type="text" name="uname" required></label>
+							<label>EMAIL ADDRESS:
+								<input type="email" name="mail" required></label>
+							<label>PASSWORD:
+								<input type="password" name="pass" id="pass1" required></label>
+							<label>CONFIRM PASSWORD:
+								<input type="password" name="pass" id="pass2" required oncahnge="check()"></label>
+							<label>AGE:
+								<input type="number" name="aage" required></label>
+							<label>ADDRESS:
+								<textarea></textarea></label>
+							<center>GENDER</center><br>
+							<label>MALE:<input type="radio" name="gendr" value="male"></label>
+							<label>FEMALE:
+								<input type="radio" name="gendr" value="female"></label>
+						
+							<input type="submit" value="SIGN UP" name="signup" id="submit">
+							
+							</li>
+							
+						</ul>
+						</form method="post" action="login.php">
+					</div>
+					</div>
+				<div class="sidebar">
+					<div id="r">
+						<form  method="post" action="login2.php">
+						<ul>
+							<li> 
+								<h2><center>LOGIN</center></h2><br>
+								<font color="black">
+								<label>FULL NAME:
+								<input type="text" name="uname" required></label>
+
+								<label>EMAIL ADDRESS:
+									<input type="email" name="mail" required></label>
+								<label>PASSWORD:
+									<input type="password" name="pass" required></label>
+								<input type="submit" name="login" value="LOGIN" id="submit">
+							</li>	
+						</ul>
+						</form>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="connect">
+				<div>
+					<h1>FOLLOW US ON</h1>
+					<div>
+						<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>
+						<a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
+						<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>&copy; 2023 BY BONDING | ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -12,20 +12,12 @@ Various modules of our project :-
 1 Admin :-
 	Check team performance
 	choose team leader
-	Data
-	Report
-	Accept request
 2 Team leader :
 	Create team
 	Select team members
-	Assign task to a member
-	Generate performance graph
-	Accept or deny leave request
 3 Team member :
-	Check performance
 	Enter data and modify it
 	View report
-	Request for leave
 Technology used :- 
 Front end :
 Html5 (Used for designing of the front end )
